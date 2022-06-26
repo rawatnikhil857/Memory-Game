@@ -66,9 +66,9 @@ function playSound(colour){
 
 function wrong(){
     $("h1").text("Game Over, Press Any Key to Restart");
-    $("body").addClass("red");
+    $("body").addClass("redbg");
     setTimeout(function(){
-        $("body").removeClass("red");
+        $("body").removeClass("redbg");
     }, 200);
     var audio = new Audio("sounds/wrong.mp3");
     audio.play();
